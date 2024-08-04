@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @keyframes slideIn {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+            background-color: black;
+            border-radius: 25px;
+            border: 1px solid azure;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: dimgray;
+        }
+
+        .main {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: azure;
+            margin-bottom: 20px;
+            text-decoration:underline;
+            animation: slideIn 1.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Javascript Assignment</h1>
+        <button><a href="21-25.html">Assignment#21-25</a></button> 
+        <button><a href="25-30.html">Assignment#25-30</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. Write a program that takes a positive integer from user &
+        // display the following in your browser.
+        // a. number
+        // b. round off value of the number
+        // c. floor value of the number
+        // d. ceil value of the number
+        document.write("<h1>QUESTION#1</h1>");
+
+        let number = prompt("Enter positive integer:");
+        if (number > 0) {
+            document.write("Number: " + number + "<br>");
+            let numberRandom = Math.round(number);
+            document.write("Round off value: " + numberRandom + "<br>");
+            let numberFloor = Math.floor(number);
+            document.write("Floor value: " + numberFloor + "<br>");
+            let numberCeil = Math.ceil(number);
+            document.write("Ceil value: " + numberCeil);
+        }
+        else {
+            document.write("You haven't enter positive integer.<br> Please enter positive integer!")
+        }
+        document.write("<hr>");
+
+        // 2. Write a program that takes a negative floating point
+        // number from user & display the following in your browser.
+        // a. number
+        // b. round off value of the number
+        // c. floor value of the number
+        // d. ceil value of the number
+        document.write("<h1>QUESTION#2</h1>");
+
+        let userInput = prompt("Enter negative floating point number:");
+        if (userInput < 0) {
+            document.write("Number: " + userInput + "<br>");
+            let numberRandomOne = Math.round(userInput);
+            document.write("Round off value: " + numberRandomOne + "<br>");
+            let numberFloorOne = Math.floor(userInput);
+            document.write("Floor value: " + numberFloorOne + "<br>");
+            let numberCeilOne = Math.ceil(userInput);
+            document.write("Ceil value: " + numberCeilOne);
+        }
+        else {
+        document.write("You haven't enter negative floating point number.<br> Please enter the required input!")
+        }
+
+        document.write("<hr>");
+
+        // 3. Write a program that displays the absolute value of a
+        // number.
+        // E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+        document.write("<h1>QUESTION#3</h1>");
+
+        let user_Input = prompt("Enter any number to find its absolute value:");
+        let toStore = user_Input;
+        let absolute = Math.abs(toStore);
+        document.write("The absolute value of " + toStore + ' is ' + absolute);
+
+        document.write("<hr>");
+
+        // 4. Write a program that simulates a dice using random()
+        // method of JS Math class. Display the value of dice in your
+        // browser.:
+        document.write("<h1>QUESTION#4</h1>");
+
+        let diceValue = Math.floor(Math.random() * 6) + 1;
+        document.write("The value of the dice is: " + diceValue);
+
+        document.write("<hr>");
+
+        // 5. Write a program that simulates a coin toss using random()
+        // method of JS Math class. Display the value of coin in your
+        // browser
+        document.write("<h1>QUESTION#5</h1>");
+
+        let coinToss=Math.floor(Math.random()*2)+1;
+        if(coinToss===1){
+        document.write('Random coin value: '+coinToss+"<br>Heads");
+        }
+        else{
+        document.write('Random coin value: '+coinToss+"<br>Tails");
+        }
+
+        document.write("<hr>");
+
+        // 6. Write a program that shows a random number between 1
+        // and 100 in your browser.
+        document.write("<h1>QUESTION#6</h1>");
+
+        let mathRandom = Math.floor(Math.random() * 100) + 1;
+        document.write('Random number between 1 and 100: ' + mathRandom);
+
+        document.write("<hr>");
+
+        // 7. Write a program that asks the user about his weight. Parse
+        // the user input and display his weight in your browser.
+        // Possible user inputs can be:
+        // a. 50
+        // b. 50kgs
+        // c. 50.2kgs
+        // d. 50.2kilograms
+        document.write("<h1>QUESTION#7</h1>");
+
+        let userInputWeight = prompt("Enter your weight in kilograms:");
+        let weight = parseFloat(userInputWeight);
+        document.write("Your weight is: " + weight + " kilograms");
+
+        document.write("<hr>");
+
+        // 8. Write a program that stores a random secret number from
+        // 1 to 10 in a variable. Ask the user to input a number
+        // between 1 and 10. If the user input equals the secret
+        // number, congratulate the user.
+        document.write("<h1>QUESTION#8</h1>");
+
+        let secretNumber=parseInt(prompt("Enter the secret number:"));
+        let so_secret_number_is=secretNumber;
+        let calculations=Math.floor(Math.random()*10)+1;
+        if(so_secret_number_is===calculations){
+            document.write("Welldone! you correctly guess the secret number.");
+        }
+        else{
+            document.write("This is not a secret number.Please try again!");
+        }
+
+        document.write("<hr>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
